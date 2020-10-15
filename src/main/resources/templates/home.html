@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Погода</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5 mb-5">
+    <h1>Введите название города или координаты (через пробел):</h1>
+    <form action="search" method="get">
+        <input type="text" name="city" placeholder="Enter your city" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Поиск</button>
+    </form>
+    <br>
+
+    <h3><span th:text="${city}"/></h3>
+
+</div>
+
+</body>
+</html>
